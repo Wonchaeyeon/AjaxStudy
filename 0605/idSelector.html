@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$("#id")</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+    
+    $(document).ready(function(){
+        $("#target").css("color","red");
+        console.log("#target 값: "+$("#target").text());
+    });
+        
+        </script>
+</head>
+<body>
+    <div>DIV1</div>
+    <div id="target">DIV2</div>
+    <span>SPAN</span>
+</body>
+</html>
