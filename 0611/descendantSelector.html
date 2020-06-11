@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ancestor descendant</title>
+    <script src="jquery-3.5.1.min.js" ></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("from input").css("border","2px dotted blue");
+        $("form fieldset input").css("background-color","yellow");
+    });
+    </script>
+</head>
+<body>
+    <form>
+        <div>기본 폼</div>
+        <label for="name">기본 폼의 자식 </label>
+        <input name="name" id="name">
+        <fieldset>
+            <label for="newseletter">기본 폼의 자손, 필드셋의 자식</label>
+            <label name=:newsletter" id="newseletter"></label>
+        </fieldset>
+    </form>
+    <기본 폼의 형제 : <input name="none">
+    
+</body>
+</html>

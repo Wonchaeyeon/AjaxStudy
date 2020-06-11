@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prev-siblings</title>
+    <style>
+        div, span{
+            display: block;
+            width: 80px;
+            height: 80px;
+            margin: 5px;
+            background: #bfa;
+            float:left;
+            font-size: 14px;
+        }
+        div#small{
+            width: 60px;
+            height: 25px;
+            font-size: 12px;
+            background: #fab;
+        }
+    </style>
+       <script src="jquery-3.5.1.min.js" ></script>
+       <script>
+           $(document).ready(function(){
+               $("#prev ~div").css("border","3px groove blue");
+
+           });
+       </script>
+</head>
+<body>
+    <div>div 아이템1</div>
+    <span id="prev">span 아이템1</span>
+    <div>div 아이텝2</div>
+    <div>div 아이템3<div id="small">중첩 div아이템1</div></div>
+<span>span 아이템2</span>
+<div>div 아이템4 </div>
+</body>
+</html>
