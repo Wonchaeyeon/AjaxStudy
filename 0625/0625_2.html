@@ -19,26 +19,24 @@ $(function(){
 			"area":"서울", 
 			"name":"빅마마"
 		}];
-		var arr2 = $.map(arr1,function(a,b){
+		var arr2 = $.map(arr1, function(a, b) {
 			if(a.area == "서울"){
 				return a;
 			}
 		});
-
 		console.log(arr2);
-        console.log("==== first End ====");
-        var arr3 = $.grep(arr1, function(a, b){
-            if(a.area == "서울") {
-                return true;
-            } else {
-                return false;
-            }
-        });
-        console.log(arr3);
-        console.log("==== Second End ====");    
-    });
+		console.log("=== first end ===");
+		var arr3 = $.grep(arr1, function (a,b) {
+			if(a.area == "서울"){
+				return true;
+			}else {
+				return false;
+			}
+		});
+		console.log(arr3);
+		console.log("=== second end ===");  
+});
 </script>
-
 </head>
 <body>
 </body>
